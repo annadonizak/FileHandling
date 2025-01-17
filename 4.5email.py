@@ -1,4 +1,4 @@
-from emails import *
+from email import *
 
 file_path = 'email.txt'
 

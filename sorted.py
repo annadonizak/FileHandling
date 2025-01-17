@@ -1,5 +1,5 @@
 ###
-# Reads the entire contents of a file
+# drukuje liste alfabetycznie
 #
 def read_from_file(name):
    with open(name, 'r') as file:
@@ -14,5 +14,5 @@ file_content = read_from_file('countries.txt')
 file_lines = file_content.splitlines()
 
 # prints the array
-for line in sorted(file_lines):  #sorted jest tu
+for line in sorted(file_lines):  #sw porzadku rosnacym alfabetycznie
    print(line)

@@ -1,5 +1,5 @@
 ###
-# Saves to a file a list of employees working at a specified position.
+# Saves to a file a list of employees working at a specified position
 #
 
 # file names
@@ -10,8 +10,8 @@ position_file = 'software_engineer.txt'
 job_title = 'Software Engineer'
 
 # write selected employees to a file
-with open(employees_file, 'r' ) as e:
-    with open(position_file, 'w') as p:
+with open(employees_file, 'r' ) as e: #otw plik z pracownikami 
+    with open(position_file, 'w') as p: #otw plik w trybie 'w'
         for line in e. readlines():
-            if job_title in line:
-                p.write(line)
+            if job_title in line: #czy posiada okreslony tytul
+                p.write(line) #zapisuje w pliku jesli jest warun
